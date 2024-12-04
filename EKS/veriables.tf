@@ -27,10 +27,12 @@ variable "ami_id" {
 
 variable "aws_access_key" {
   type      = string
+  default   = "AKIA6DXMK5XMIZRYJYGW"
   sensitive = true
 }
 
 variable "aws_secret_key" {
   type      = string
+  default   = "J8n1IkgmYF0T3WLlWxGDaGVk7fhO/0LTpOyaXPoK"
   sensitive = true
 }
