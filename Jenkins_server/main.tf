@@ -66,7 +66,7 @@ module "ec2_instance" {
   name = "jenkins-server-EC2"
 
   instance_type               = var.instance_type
-  #key_name                    = var.aws_key_pair_name
+  key_name                    = var.aws_key_pair_name
   monitoring                  = true
   vpc_security_group_ids      = [module.sg.security_group_id]
   subnet_id                   = module.vpc.public_subnets[0]
